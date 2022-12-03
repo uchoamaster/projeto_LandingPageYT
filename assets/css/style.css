@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
-/* corpo do documento */
 body {
     background-color: rgb(1, 1, 38);
-    color: white;
+    color: #FFF;
     max-width: 1200px;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
@@ -11,14 +10,15 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 #title {
     flex-direction: column;
     line-height: 10px;
+    font-size: 30px;
 }
 
 li {
@@ -26,45 +26,38 @@ li {
     margin: 20px;
 }
 
-a {
-    color: white;
+li a {
+    color: #FFF;
     text-decoration: none;
 }
 
-a:hover {
+li a:hover {
     color: rgb( 8, 15, 212);
     transition: .3s all;
 }
 
-#inscreva-se-btn {
-    border: 2px solid rgb( 8, 15, 212);
-    border-radius:  15px;
+#botao-menu {
+    border: 3px solid rgb( 8, 15, 212);
+    border-radius: 15px;
     padding: 15px;
 }
 
-#inscreva-se-btn:hover {
+#botao-menu:hover {
     background-color: rgb( 8, 15, 212);
-    color: white;
-}
-
-h1 {
-    font-weight: 900;
+    color: #FFF;
 }
 
 img {
     width: 630px;
     border-radius: 25px;
-    align-items: center;
 }
-aside {
-    margin: 5px;
-}
+
 main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    gap: 30px;
     margin-top: 50px;
+    gap: 50px;
 }
 
 h2 {
@@ -79,7 +72,6 @@ h2 span {
 
 p {
     line-height: 20px;
-    /* max-width: 500px; */
 }
 
 form {
@@ -92,15 +84,13 @@ input {
     height: 20px;
     padding: 10px;
     border-radius: 5px;
-    border: none;
     font-size: 15px;
 }
 
 form [type="submit"] {
     height: 50px;
-    width: 100%;
-    background-color: rgb( 8, 15, 212);
-    color: white;
+    background-color: rgb(8 ,15, 212);
+    color: #FFF;
     font-weight: bold;
     transition: .3s all;
 }
@@ -108,38 +98,5 @@ form [type="submit"] {
 form [type="submit"]:hover {
     cursor: pointer;
     background-color: rgb(1, 1, 24);
-    color: white;
-}
-
-@media screen and (max-width: 425px) {
-    #contato {
-        display: none;
-    }
-}
-@media screen and (max-width: 768px) {
-    header, main {
-        flex-direction: column;
-    }
-   h2 {
-    font-size: 32px;
-    text-align: center;
-   }
-   p {
-    text-align: center;
-   }
-   form {
-    margin: 0 auto;
-    width: 100%;
-   }
-   input {
-    align-self: center;
-    width: 85%;
-   }
-   img {
-    display: none;
-   }
-   ul {
-    text-align: center;
-    margin: 0 auto;
-   }
+    color: #FFF;
 }
